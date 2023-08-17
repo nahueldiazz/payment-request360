@@ -35,7 +35,6 @@ const Form = () =>{
     const onSubmit = (data:any) => {
         const originalDate = new Date(data?.date);
         const formattedDate = format(originalDate, 'dd-MM-yyyy');
-        console.log(data);
         const payload = 
        { payment_request:{
             description: data?.description,
